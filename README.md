@@ -4,33 +4,28 @@ This full-stack application leverages machine learning to analyze social media u
 
 
 
-## 📺 Demo
+## Demo
 Watch the application in action: [View Demo Video](https://youtu.be/P-IIM5gznRc)
 
 ---
 
-## 🚀 Features
-*   **Predictive Analysis:** Uses an XGBoost classifier trained on curated Kaggle datasets to evaluate mental health metrics based on user behavior.
+## Features
+*   **Predictive Analysis:** Uses an XGBoost classifier trained on a curated Kaggle dataset to evaluate mental health metrics based on user behavior.
 *   **Real-time Inference:** Fast and lightweight API responses via FastAPI.
 *   **Modern UI:** A clean, intuitive dashboard built with Next.js and Tailwind CSS.
 *   **Containerized Architecture:** Fully Dockerized components for consistent environments across development and production.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 *   **Frontend:** Next.js, React, Tailwind CSS
 *   **Backend:** FastAPI (Python)
-*   **Machine Learning:** XGBoost, Scikit-learn, Pandas
+*   **Machine Learning:** XGBoost, Scikit-learn, Pandas, Numpy
 *   **DevOps:** Docker, Docker Compose
 
 ---
 
-## 📦 Installation & Setup
-
-### Prerequisites
-*   Node.js (v18+)
-*   Python 3.9+
-*   Docker & Docker Compose
+## Installation & Setup
 
 ### 1. Frontend Setup
 ```bash
@@ -38,7 +33,7 @@ cd Frontend
 npm install
 npm run dev
 ```
-The frontend will be available at `http://localhost:3000`.
+The frontend will be available at `http://127.0.0.1:8000`.
 
 ### 2. Backend & Model Setup
 The backend is served via FastAPI and runs inside a Docker container.
@@ -46,7 +41,7 @@ The backend is served via FastAPI and runs inside a Docker container.
 cd Backend
 docker compose up --build
 ```
-This command builds the backend image and starts the inference service at `http://localhost:8000`.
+This command builds the backend image and starts the inference service at `http://127.0.0.1:8000`.
 
 ---
 
@@ -64,7 +59,7 @@ The predictive engine was built using an **XGBoost** (Extreme Gradient Boosting)
 ├── Frontend/           # Next.js application
 ├── Backend/            # FastAPI, Model logic, and Dockerfile
 │   ├── model/          # Trained XGBoost model artifacts
-│   └── main.py         # API endpoints
+│   └── MentalHealth.py         # API endpoints
 ├── docker-compose.yml  # Orchestration for the full stack
 └── README.md
 ```
