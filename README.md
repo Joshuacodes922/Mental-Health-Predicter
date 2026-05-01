@@ -9,22 +9,6 @@ Watch the application in action: [View Demo Video](https://youtu.be/P-IIM5gznRc)
 
 ---
 
-## Features
-*   **Predictive Analysis:** Uses an XGBoost classifier trained on a curated Kaggle dataset to evaluate mental health metrics based on user behavior.
-*   **Real-time Inference:** Fast and lightweight API responses via FastAPI.
-*   **Modern UI:** A clean, intuitive dashboard built with Next.js and Tailwind CSS.
-*   **Containerized Architecture:** Fully Dockerized components for consistent environments across development and production.
-
----
-
-## Tech Stack
-*   **Frontend:** Next.js, React, Tailwind CSS
-*   **Backend:** FastAPI (Python)
-*   **Machine Learning:** XGBoost, Scikit-learn, Pandas, Numpy
-*   **DevOps:** Docker, Docker Compose
-
----
-
 ## Installation & Setup
 
 ### 1. Frontend Setup
@@ -46,6 +30,14 @@ This command builds the backend image and starts the inference service at `http:
 
 ---
 
+## Tech Stack
+*   **Frontend:** Next.js, React, Tailwind CSS
+*   **Backend:** FastAPI (Python)
+*   **Machine Learning:** XGBoost, Scikit-learn, Pandas, Numpy
+*   **DevOps:** Docker, Docker Compose
+
+---
+
 ## Machine Learning Workflow
 The predictive engine was built using an **XGBoost** (Extreme Gradient Boosting) model. The workflow involved:
 1.  **Data Sourcing:** Utilizing a comprehensive social media usage dataset from Kaggle.
@@ -64,11 +56,10 @@ The predictive engine was built using an **XGBoost** (Extreme Gradient Boosting)
 ├── docker-compose.yml  # Orchestration for the full stack
 └── README.md
 ```
+## Features
+*   **Predictive Analysis:** Uses an XGBoost classifier trained on a curated Kaggle dataset to evaluate mental health metrics based on user behavior.
+*   **Real-time Inference:** Fast and lightweight API responses via FastAPI.
+*   **Modern UI:** A clean, intuitive dashboard built with Next.js and Tailwind CSS.
+*   **Containerized Architecture:** Fully Dockerized components for consistent environments across development and production.
 
 ---
-
-## Usage
-1.  Ensure both the Frontend and Backend services are running.
-2.  Navigate to the web interface.
-3.  Input the relevant social media usage data.
-4.  View the generated prediction and insights based on the ML model's analysis.
