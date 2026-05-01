@@ -66,7 +66,7 @@ The predictive engine was built using an **XGBoost** (Extreme Gradient Boosting)
 
 ---
 
-## 📝 Usage
+## Usage
 1.  Ensure both the Frontend and Backend services are running.
 2.  Navigate to the web interface.
 3.  Input the relevant social media usage data.
