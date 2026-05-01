@@ -45,7 +45,7 @@ This command builds the backend image and starts the inference service at `http:
 
 ---
 
-## 🧠 Machine Learning Workflow
+## Machine Learning Workflow
 The predictive engine was built using an **XGBoost** (Extreme Gradient Boosting) model. The workflow involved:
 1.  **Data Sourcing:** Utilizing a comprehensive social media usage dataset from Kaggle.
 2.  **Preprocessing:** Feature engineering and normalization of usage metrics (e.g., screen time, platform engagement, sleep patterns).
@@ -54,7 +54,7 @@ The predictive engine was built using an **XGBoost** (Extreme Gradient Boosting)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```text
 ├── Frontend/           # Next.js application
 ├── Backend/            # FastAPI, Model logic, and Dockerfile
